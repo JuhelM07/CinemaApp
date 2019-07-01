@@ -17,7 +17,7 @@ class CinemaTableViewController: UITableViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //self.tableView.rowHeight = UITableView.automaticDimension
+        self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 200
     }
 

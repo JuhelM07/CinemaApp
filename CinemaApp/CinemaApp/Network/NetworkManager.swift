@@ -25,7 +25,7 @@ class NetworkManager: NSObject {
                 let data = data,
                 let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String:Any],
                 let cinemas = json["cinemas"] as? [Dictionary<String, Any>]
-                else { return }
+            else { return }
             
             for dictionary in cinemas {
                 try? cinema.append(Cinema(with: dictionary))
