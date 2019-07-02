@@ -19,9 +19,9 @@ class CinemaTableViewCell: UITableViewCell {
     }
     
     func configureCell(with cinema: Cinema) {
-        distanceLabel.text = String(cinema.distance)
+        distanceLabel.text = "\(cinema.distance) miles"
         nameLabel.text = cinema.cinemaName
-        idLabel.text = cinema.id
+        idLabel.text = "Cinema ID: \(cinema.id)"
         
         print(cinema.cinemaName)
         

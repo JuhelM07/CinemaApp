@@ -4,6 +4,12 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Needed to find cinemas around you</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Needed to find cinemas around you</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Needed to find cinemas around you</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

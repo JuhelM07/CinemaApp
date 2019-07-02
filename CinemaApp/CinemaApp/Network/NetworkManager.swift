@@ -35,4 +35,29 @@ class NetworkManager: NSObject {
         task.resume()
     }
     
+    static func cinemaSearch(withPostCode postcode:String, completion: @escaping ([Cinema]) -> ()) {
+        let basePath = "https://api.cinelist.co.uk/search/cinemas/postcode/" //used to search by postcode
+        
+        guard let url = URL(string: basePath + postcode) else { return }
+        print (url)
+        
+        let task = URLSession.shared.dataTask(with: url) { (data:Data?, response:URLResponse?, error:Error?) in
+            var cinema = [Cinema]()
+            
+            guard
+                let data = data,
+                let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String:Any],
+                let cinemas = json["cinemas"] as? [Dictionary<String, Any>]
+                else { return }
+            
+            for dictionary in cinemas {
+                try? cinema.append(Cinema(with: dictionary))
+            }
+            completion(cinema)
+        }
+        task.resume()
+    }
+    
+    
+    
 }
