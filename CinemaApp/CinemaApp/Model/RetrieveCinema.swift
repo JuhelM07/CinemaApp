@@ -13,6 +13,8 @@ struct Cinema {
     private (set) var distance: Double
     private (set) var cinemaName: String
     private (set) var id: String
+    //private (set) var cinemaLat: String
+    //private (set) var cinemaLon: String
     //private (set) var times: String
     //private (set) var movieTitle: String
     
@@ -22,7 +24,8 @@ struct Cinema {
     }
     
     init(with json: [String:Any]) throws {
-        guard let distance = json["distance"] as? Double,
+        guard
+            let distance = json["distance"] as? Double,
             let cinemaName = json["name"] as? String,
             let id = json["id"] as? String
             //let times = json["times"] as? String,

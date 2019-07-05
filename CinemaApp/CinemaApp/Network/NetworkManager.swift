@@ -15,8 +15,9 @@ class NetworkManager: NSObject {
         
         let basePath = "https://api.cinelist.co.uk/search/cinemas/coordinates/" //used to search by coordinates
         
+        let cinemaUrl = "https://api.cinelist.co.uk/get/cinema/"
+        
         guard let url = URL(string: basePath + latitude + "/" + longitude) else { return }
-        print (url)
         
         let task = URLSession.shared.dataTask(with: url) { (data:Data?, response:URLResponse?, error:Error?) in
             var cinema = [Cinema]()
@@ -29,6 +30,28 @@ class NetworkManager: NSObject {
             
             for dictionary in cinemas {
                 try? cinema.append(Cinema(with: dictionary))
+                let id = dictionary["id"]!
+                guard let cinemaInfoUrl = URL(string: cinemaUrl + "\(id)") else { return }
+                
+                let task2 = URLSession.shared.dataTask(with: cinemaInfoUrl) { (data2, response2, error2) in
+                    var cinemaInfo = [CinemaInfo]()
+                    
+                    guard
+                        let data = data2,
+                        let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
+                        let getCinemaLatitude = json["lat"] as? String,
+                        let getCinemaLongitude = json["lon"] as? String
+                        else { return }
+                    print(getCinemaLatitude + ", " + getCinemaLongitude)
+                    //CAN GET CINEMA LONGITUDE AND LATITUDE
+                    
+//                    for dictionary2 in json {
+//                        try? cinemaInfo.append(CinemaInfo(with: dictionary2))
+//                        print(dictionary2)
+//                    }
+                    //completion(cinemaInfo)
+                }
+                task2.resume()
             }
             completion(cinema)
         }
@@ -39,7 +62,6 @@ class NetworkManager: NSObject {
         let basePath = "https://api.cinelist.co.uk/search/cinemas/postcode/" //used to search by postcode
         
         guard let url = URL(string: basePath + postcode) else { return }
-        print (url)
         
         let task = URLSession.shared.dataTask(with: url) { (data:Data?, response:URLResponse?, error:Error?) in
             var cinema = [Cinema]()

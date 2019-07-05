@@ -33,7 +33,6 @@ class CinemaTableViewController: UITableViewController, CLLocationManagerDelegat
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-
         if let location = locations.first {
             let userLatitude = location.coordinate.latitude
             let userLongitude = location.coordinate.longitude

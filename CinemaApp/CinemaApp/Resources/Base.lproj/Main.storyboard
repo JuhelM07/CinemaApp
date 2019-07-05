@@ -1,34 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dD4-gY-jBx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="reh-M9-Qvc">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="04c-qw-dCM">
+            <objects>
+                <viewController id="reh-M9-Qvc" customClass="MapViewController" customModule="CinemaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ieK-p9-foT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1op-8d-XMF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1op-8d-XMF" firstAttribute="top" secondItem="ieK-p9-foT" secondAttribute="top" id="2v0-ZS-lub"/>
+                            <constraint firstItem="1op-8d-XMF" firstAttribute="trailing" secondItem="QBI-Z0-M37" secondAttribute="trailing" id="8m5-Uu-4SA"/>
+                            <constraint firstAttribute="bottom" secondItem="1op-8d-XMF" secondAttribute="bottom" id="FKd-2c-51E"/>
+                            <constraint firstItem="1op-8d-XMF" firstAttribute="leading" secondItem="QBI-Z0-M37" secondAttribute="leading" id="TB2-ca-rcM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QBI-Z0-M37"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="1op-8d-XMF" id="dVz-RY-daM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mHC-bM-wzZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-449.27536231884062" y="47.544642857142854"/>
+        </scene>
         <!--Cinema Table View Controller-->
         <scene sceneID="r3b-K7-7Xt">
             <objects>
-                <tableViewController id="dD4-gY-jBx" customClass="CinemaTableViewController" customModule="CinemaApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="DrawerViewController" id="dD4-gY-jBx" customClass="CinemaTableViewController" customModule="CinemaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tzw-uN-pwE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="VCG-fW-0dN">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="266"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search by postcode here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R5C-1p-zuo">
-                                    <rect key="frame" x="8" y="193" width="201" height="30"/>
+                                    <rect key="frame" x="8" y="35" width="201" height="30"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTj-nj-gL6">
-                                    <rect key="frame" x="217" y="193" width="64" height="30"/>
+                                    <rect key="frame" x="217" y="35" width="64" height="30"/>
                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="db8-iJ-pVo"/>
@@ -43,22 +73,8 @@
                                         <action selector="searchButton:" destination="dD4-gY-jBx" eventType="touchUpInside" id="Cad-tR-WUE"/>
                                     </connections>
                                 </button>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Around You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isr-XT-OPh">
-                                    <rect key="frame" x="83" y="87" width="244.5" height="54.5"/>
-                                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="47"/>
-                                    <color key="textColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </label>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0M-SB-TiI">
-                                    <rect key="frame" x="8" y="234" width="398" height="32"/>
-                                    <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                    <state key="normal" title="Switch to map view">
-                                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </state>
-                                </button>
                                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oos-Oh-HEV">
-                                    <rect key="frame" x="289" y="193" width="117" height="30"/>
+                                    <rect key="frame" x="289" y="35" width="117" height="32"/>
                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="117" id="T2s-C4-r1Z"/>
@@ -72,28 +88,17 @@
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="isr-XT-OPh" firstAttribute="top" secondItem="VCG-fW-0dN" secondAttribute="top" constant="87" id="0iR-3I-KLz"/>
                                 <constraint firstItem="sTj-nj-gL6" firstAttribute="top" secondItem="R5C-1p-zuo" secondAttribute="top" id="73J-q4-0AQ"/>
                                 <constraint firstAttribute="trailing" secondItem="oos-Oh-HEV" secondAttribute="trailing" constant="8" id="A8W-5t-Cc8"/>
                                 <constraint firstItem="R5C-1p-zuo" firstAttribute="leading" secondItem="VCG-fW-0dN" secondAttribute="leading" constant="8" id="HqQ-Nu-91v"/>
-                                <constraint firstItem="oos-Oh-HEV" firstAttribute="top" secondItem="isr-XT-OPh" secondAttribute="bottom" constant="51.5" id="LMC-vc-tid"/>
-                                <constraint firstAttribute="bottom" secondItem="sTj-nj-gL6" secondAttribute="bottom" constant="43" id="aBR-06-iUX"/>
-                                <constraint firstItem="R5C-1p-zuo" firstAttribute="top" secondItem="isr-XT-OPh" secondAttribute="bottom" constant="51.5" id="d1h-Na-VNH"/>
-                                <constraint firstItem="isr-XT-OPh" firstAttribute="leading" secondItem="VCG-fW-0dN" secondAttribute="leading" constant="83" id="fFo-ee-w12"/>
-                                <constraint firstAttribute="trailing" secondItem="B0M-SB-TiI" secondAttribute="trailing" constant="8" id="fnH-ce-My3"/>
-                                <constraint firstItem="R5C-1p-zuo" firstAttribute="top" secondItem="isr-XT-OPh" secondAttribute="bottom" constant="51.5" id="gOY-qQ-Xvg"/>
-                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="isr-XT-OPh" secondAttribute="trailing" symbolic="YES" id="hoI-tZ-bTr"/>
-                                <constraint firstItem="B0M-SB-TiI" firstAttribute="leading" secondItem="VCG-fW-0dN" secondAttribute="leading" constant="8" id="ofr-AC-ifU"/>
-                                <constraint firstItem="B0M-SB-TiI" firstAttribute="top" secondItem="oos-Oh-HEV" secondAttribute="bottom" constant="11" id="qnC-M7-Gbt"/>
+                                <constraint firstAttribute="bottom" secondItem="sTj-nj-gL6" secondAttribute="bottom" constant="34" id="aBR-06-iUX"/>
                                 <constraint firstItem="sTj-nj-gL6" firstAttribute="top" secondItem="oos-Oh-HEV" secondAttribute="top" id="tmm-hd-IEn"/>
                                 <constraint firstItem="sTj-nj-gL6" firstAttribute="leading" secondItem="R5C-1p-zuo" secondAttribute="trailing" constant="8" id="tsV-bA-cR2"/>
-                                <constraint firstItem="B0M-SB-TiI" firstAttribute="top" secondItem="R5C-1p-zuo" secondAttribute="bottom" constant="11" id="yYz-8j-Is4"/>
-                                <constraint firstAttribute="bottom" secondItem="B0M-SB-TiI" secondAttribute="bottom" id="zXn-ww-kQU"/>
                             </constraints>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cinemaCell" rowHeight="90" id="EOd-Yj-i2v" customClass="CinemaTableViewCell" customModule="CinemaApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="294" width="414" height="90"/>
+                                <rect key="frame" x="0.0" y="127" width="414" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EOd-Yj-i2v" id="M0Y-l0-VfX">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="89.5"/>

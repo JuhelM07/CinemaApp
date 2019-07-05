@@ -23,8 +23,6 @@ class CinemaTableViewCell: UITableViewCell {
         nameLabel.text = cinema.cinemaName
         idLabel.text = "Cinema ID: \(cinema.id)"
         
-        print(cinema.cinemaName)
-        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
