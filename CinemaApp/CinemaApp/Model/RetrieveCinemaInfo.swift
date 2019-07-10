@@ -25,7 +25,7 @@ struct CinemaInfo {
         case invalid(String, Any)
     }
     
-    init(with json: [String:Any]) throws {
+    init(with json: [String: Any]) throws {
         guard
             let address1 = json["address1"] as? String,
             let townCity = json["towncity"] as? String,

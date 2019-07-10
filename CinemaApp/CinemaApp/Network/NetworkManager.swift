@@ -35,21 +35,16 @@ class NetworkManager: NSObject {
                 
                 let task2 = URLSession.shared.dataTask(with: cinemaInfoUrl) { (data2, response2, error2) in
                     var cinemaInfo = [CinemaInfo]()
-                    
                     guard
                         let data = data2,
-                        let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
-                        let getCinemaLatitude = json["lat"] as? String,
-                        let getCinemaLongitude = json["lon"] as? String
+                        let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
                         else { return }
-                    print(getCinemaLatitude + ", " + getCinemaLongitude)
-                    //CAN GET CINEMA LONGITUDE AND LATITUDE
-                    
-//                    for dictionary2 in json {
-//                        try? cinemaInfo.append(CinemaInfo(with: dictionary2))
-//                        print(dictionary2)
-//                    }
-                    //completion(cinemaInfo)
+                    var results = [[String : Any]]()
+                    results.append(json)
+
+                    for dictionary2 in results {
+                        try! cinemaInfo.append(CinemaInfo(with: dictionary2))
+                    }
                 }
                 task2.resume()
             }
@@ -74,6 +69,7 @@ class NetworkManager: NSObject {
             
             for dictionary in cinemas {
                 try? cinema.append(Cinema(with: dictionary))
+                print(dictionary)
             }
             completion(cinema)
         }

@@ -22,6 +22,9 @@ class CinemaTableViewCell: UITableViewCell {
         distanceLabel.text = "\(cinema.distance) miles"
         nameLabel.text = cinema.cinemaName
         idLabel.text = "Cinema ID: \(cinema.id)"
+
+        
+        
         
     }
 

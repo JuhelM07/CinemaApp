@@ -11,6 +11,7 @@ import CoreLocation
 
 class CinemaTableViewController: UITableViewController, CLLocationManagerDelegate{
     var cinema = [Cinema]()
+        var cinemaInfo:CinemaInfo?
     let locationManager = CLLocationManager()
     @IBOutlet weak var postcodeTF: UITextField!
     

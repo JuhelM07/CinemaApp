@@ -13,6 +13,8 @@ import CoreLocation
 
 class MapViewController: UIViewController, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
+    var cinemaInfo:CinemaInfo?
+    var cinema = [Cinema]()
     @IBOutlet weak var mapView: MKMapView!
     
     override func viewDidLoad() {
@@ -20,6 +22,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         initialiseLocationManager()
         let drawerViewController = self.storyboard!.instantiateViewController(withIdentifier: "DrawerViewController")
         self.addDrawerView(withViewController: drawerViewController)
+        
+        print("first")
+       
         // Do any additional setup after loading the view.
     }
     
@@ -34,9 +39,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         manager.stopUpdatingLocation()
-        let location = locations[0]
+        let loca = locations[0]
+        
         let span:MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: 0.002,longitudeDelta: 0.002)
-        let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
+        let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(loca.coordinate.latitude, loca.coordinate.longitude)
         let region:MKCoordinateRegion = MKCoordinateRegion(center:myLocation, span: span)
         mapView.setRegion(region, animated: true)
         mapView.showsUserLocation = true
