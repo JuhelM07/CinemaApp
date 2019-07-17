@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CinemaApp/Network/NetworkManager.swift"
-            timestampString = "584494794.802194"
+            timestampString = "585016449.6347409"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
             landmarkName = "cinemaSearch(withLongitude:withLatitude:completion:)"
             landmarkType = "7">
             <Locations>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CinemaApp/Model/RetrieveCinema.swift"
-            timestampString = "584493630.589645"
+            timestampString = "585016449.634858"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "init(with:)"
             landmarkType = "7">
          </BreakpointContent>

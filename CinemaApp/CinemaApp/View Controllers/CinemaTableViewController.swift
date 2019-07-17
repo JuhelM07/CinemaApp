@@ -11,7 +11,7 @@ import CoreLocation
 
 class CinemaTableViewController: UITableViewController, CLLocationManagerDelegate{
     var cinema = [Cinema]()
-        var cinemaInfo:CinemaInfo?
+    var cinemaInfo = [CinemaInfo]()
     let locationManager = CLLocationManager()
     @IBOutlet weak var postcodeTF: UITextField!
     
@@ -43,8 +43,14 @@ class CinemaTableViewController: UITableViewController, CLLocationManagerDelegat
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
+            NetworkManager.cinemaInfoSearch(withLongitude: String(userLongitude), withLatitude: String(userLatitude)) { (cinemaInfo) in
+                self.cinemaInfo = cinemaInfo
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
             }
         }
+    }
     }
     
     
@@ -62,7 +68,8 @@ class CinemaTableViewController: UITableViewController, CLLocationManagerDelegat
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return cinema.count
+        //print(cinemaInfo.count)
+        return cinemaInfo.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -74,7 +81,9 @@ class CinemaTableViewController: UITableViewController, CLLocationManagerDelegat
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cinemaCell", for: indexPath) as? CinemaTableViewCell else { return UITableViewCell() }
         let cinemaList = cinema[indexPath.section]
-        cell.configureCell(with: cinemaList)
+        let cinemaInfoList = cinemaInfo[indexPath.section]
+        cell.configureCell(with: cinemaList, with: cinemaInfoList)
+        
         return cell
     }
 

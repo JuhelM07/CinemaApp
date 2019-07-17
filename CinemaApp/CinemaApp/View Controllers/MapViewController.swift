@@ -11,9 +11,10 @@ import DrawerView
 import MapKit
 import CoreLocation
 
-class MapViewController: UIViewController, CLLocationManagerDelegate {
+class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     let locationManager = CLLocationManager()
-    var cinemaInfo:CinemaInfo?
+    var cinemaInfo = [CinemaInfo]()
+    var cinemaI:CinemaInfo?
     var cinema = [Cinema]()
     @IBOutlet weak var mapView: MKMapView!
     
@@ -22,9 +23,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         initialiseLocationManager()
         let drawerViewController = self.storyboard!.instantiateViewController(withIdentifier: "DrawerViewController")
         self.addDrawerView(withViewController: drawerViewController)
-        
-        print("first")
-       
         // Do any additional setup after loading the view.
     }
     
@@ -38,7 +36,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        manager.stopUpdatingLocation()
+        //manager.stopUpdatingLocation()
         let loca = locations[0]
         
         let span:MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: 0.002,longitudeDelta: 0.002)
@@ -46,7 +44,14 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         let region:MKCoordinateRegion = MKCoordinateRegion(center:myLocation, span: span)
         mapView.setRegion(region, animated: true)
         mapView.showsUserLocation = true
+        
+//        NetworkManager.cinemaInfoSearch(withLongitude: String(loca.coordinate.longitude), withLatitude: String(loca.coordinate.latitude)) { (cinemaInfo) in
+//            self.cinemaInfo = cinemaInfo
+//        }
+//
+//        print(cinemaI?.latitude)
     }
+}
     
 
     /*
@@ -59,4 +64,4 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     }
     */
 
-}
+
