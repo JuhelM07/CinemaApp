@@ -13,6 +13,7 @@ class CinemaTableViewController: UITableViewController, CLLocationManagerDelegat
     
     var cinemas = [Cinema]()
     let locationManager = CLLocationManager()
+    var updateCinemas: (([Cinema]) -> Void)? // just a function signature which is given implemenation inside the MapViewController
     @IBOutlet weak var postcodeTF: UITextField!
     
     override func viewDidLoad() {
@@ -27,6 +28,7 @@ class CinemaTableViewController: UITableViewController, CLLocationManagerDelegat
         if let postcode = postcodeTF.text, !postcode.isEmpty {
             NetworkManager.cinemaSearch(withPostCode: postcode) { (cinemas) in
                 self.cinemas = cinemas
+                self.updateCinemas?(cinemas) // if updateCinemas has been given implementation, the updated cinema array is passed as a paramameter. if the updateCinemas is nil, nothing happens
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }

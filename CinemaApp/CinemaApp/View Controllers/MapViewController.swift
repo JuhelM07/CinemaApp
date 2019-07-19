@@ -16,15 +16,25 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     let locationManager = CLLocationManager()
     var cinemaInfo = [CinemaInfo]()
     var cinemaI:CinemaInfo?
-    var cinema = [Cinema]()
+    var cinemas = [Cinema]()
     @IBOutlet weak var mapView: MKMapView!
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         initialiseLocationManager()
-        let drawerViewController = self.storyboard!.instantiateViewController(withIdentifier: "DrawerViewController")
+        guard let drawerViewController = self.storyboard!.instantiateViewController(withIdentifier: "DrawerViewController") as? CinemaTableViewController else { return }
         self.addDrawerView(withViewController: drawerViewController)
+        
+    }
+    
+    // This function will keep the cinemas updated in the MapViewController anytime the array in CinemaTableViewController is updated. You will need this for mapViewAnnotations
+    
+    func configureMapViewUpdater(with cinemaController: CinemaTableViewController) {
+        #warning("the block of code following the '=' sign will run anytime the 'updateCinemas' property is called inside cinemaTableViewController")
+        cinemaController.updateCinemas = { (cinemas) in
+            self.cinemas = cinemas
+        }
     }
     
     func initialiseLocationManager() {

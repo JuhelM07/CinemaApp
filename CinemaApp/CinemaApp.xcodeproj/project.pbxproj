@@ -87,9 +87,9 @@
 		2525293E22BD424800DA31B8 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				25EF721622CEAB7C00DFA2F6 /* MapViewController.swift */,
 				2525293C22BD422C00DA31B8 /* CinemaTableViewController.swift */,
 				2525294422BD48F200DA31B8 /* CinemaTableViewCell.swift */,
-				25EF721622CEAB7C00DFA2F6 /* MapViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
