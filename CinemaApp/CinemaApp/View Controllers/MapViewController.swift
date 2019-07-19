@@ -12,6 +12,7 @@ import MapKit
 import CoreLocation
 
 class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
+    
     let locationManager = CLLocationManager()
     var cinemaInfo = [CinemaInfo]()
     var cinemaI:CinemaInfo?
@@ -19,14 +20,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     @IBOutlet weak var mapView: MKMapView!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         initialiseLocationManager()
         let drawerViewController = self.storyboard!.instantiateViewController(withIdentifier: "DrawerViewController")
         self.addDrawerView(withViewController: drawerViewController)
-        // Do any additional setup after loading the view.
     }
     
     func initialiseLocationManager() {
+        
         locationManager.requestAlwaysAuthorization()
         if CLLocationManager.locationServicesEnabled() {
             locationManager.delegate = self
