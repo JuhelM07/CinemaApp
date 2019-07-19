@@ -229,7 +229,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CinemaApp/Pods-CinemaApp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CinemaApp/Pods-CinemaApp-frameworks.sh\"\n\n";
 			showEnvVarsInLog = 0;
 		};
 		8646FB771E70AC144E22E48F /* [CP] Check Pods Manifest.lock */ = {
@@ -416,13 +416,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6S3RGF89R7;
+				DEVELOPMENT_TEAM = 666EPUUFJ9;
 				INFOPLIST_FILE = CinemaApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.juhelmiah.CinemaApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omaramoako.CinemaApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -435,13 +435,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6S3RGF89R7;
+				DEVELOPMENT_TEAM = 666EPUUFJ9;
 				INFOPLIST_FILE = CinemaApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.juhelmiah.CinemaApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omaramoako.CinemaApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
