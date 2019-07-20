@@ -50,11 +50,14 @@ class CinemaTableViewController: UITableViewController, CLLocationManagerDelegat
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cinemaCell", for: indexPath) as? CinemaTableViewCell else { return UITableViewCell() }
+
         cell.configureCell(with: cinemas[indexPath.row])
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.scrollToRow(at: indexPath, at: .top, animated: true)
         collapseDrawer?()
     }
 
