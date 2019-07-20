@@ -14,6 +14,7 @@ class CinemaTableViewController: UITableViewController, CLLocationManagerDelegat
     var cinemas = [Cinema]()
     let locationManager = CLLocationManager()
     var updateCinemas: (([Cinema]) -> Void)? // just a function signature which is given implemenation inside the MapViewController
+    var collapseDrawer: (() -> Void)?
     @IBOutlet weak var postcodeTF: UITextField!
     
     override func viewDidLoad() {
@@ -51,6 +52,10 @@ class CinemaTableViewController: UITableViewController, CLLocationManagerDelegat
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cinemaCell", for: indexPath) as? CinemaTableViewCell else { return UITableViewCell() }
         cell.configureCell(with: cinemas[indexPath.row])
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        collapseDrawer?()
     }
 
 }
