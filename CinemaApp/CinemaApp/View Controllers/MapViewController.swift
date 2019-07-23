@@ -17,6 +17,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     var cinemaInfo = [CinemaInfo]()
     var cinemaI:CinemaInfo?
     var cinemas = [Cinema]()
+    var cinemaController: CinemaTableViewController?
+    
     @IBOutlet weak var mapView: MKMapView!
     var drawer: DrawerView?
     
@@ -25,25 +27,17 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         super.viewDidLoad()
         
         initialiseLocationManager()
-        guard let drawerViewController = self.storyboard!.instantiateViewController(withIdentifier: "DrawerViewController") as? CinemaTableViewController else { return }
-        
-        configureMapViewUpdater(with: drawerViewController)
-        configureCollapseDrawer(with: drawerViewController)
-        drawer = self.addDrawerView(withViewController: drawerViewController)
+        guard let cinemaController = self.storyboard!.instantiateViewController(withIdentifier: "DrawerViewController") as? CinemaTableViewController else { return }
+       
+        configureCinemaController(with: cinemaController)
+        self.cinemaController = cinemaController
+        drawer = self.addDrawerView(withViewController: cinemaController)
     }
     
-    func configureCollapseDrawer(with cinemaController: CinemaTableViewController) {
+    func configureCinemaController(with cinemaController: CinemaTableViewController) {
         
-        cinemaController.collapseDrawer = { () in
-            self.drawer?.position = .partiallyOpen
-        }
-    }
-    
-    func configureMapViewUpdater(with cinemaController: CinemaTableViewController) {
-        
-        cinemaController.updateCinemas = { (cinemas) in
-            self.cinemas = cinemas
-        }
+        cinemaController.collapseDrawer = { () in self.drawer?.position = .partiallyOpen }
+        cinemaController.updateCinemas = { (cinemas) in self.cinemas = cinemas }
     }
     
     func initialiseLocationManager() {
@@ -59,19 +53,16 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         //manager.stopUpdatingLocation()
         if let location = locations.first {
-            let cinemaController = CinemaTableViewController()
+            
             let span:MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: 0.002,longitudeDelta: 0.002)
             let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
             let region:MKCoordinateRegion = MKCoordinateRegion(center:myLocation, span: span)
             mapView.setRegion(region, animated: true)
             mapView.showsUserLocation = true
-            ////////FROM HERE/////////////////////////
+
             NetworkManager.cinemaSearch(withLongitude: String(location.coordinate.longitude), withLatitude: String(location.coordinate.latitude)) { (cinemas) in
-                self.configureMapViewUpdater(with: cinemaController)
                 
-                print("Accessed")
-             /////////////////////////////////////////
-    
+                self.cinemaController!.cinemas = cinemas
         }
     }
 }
@@ -86,5 +77,4 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         // Pass the selected object to the new view controller.
     }
     */
-
-
+}

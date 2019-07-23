@@ -11,7 +11,14 @@ import CoreLocation
 
 class CinemaTableViewController: UITableViewController, CLLocationManagerDelegate {
     
-    var cinemas = [Cinema]()
+    var cinemas = [Cinema]() {
+        didSet {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
     let locationManager = CLLocationManager()
     var updateCinemas: (([Cinema]) -> Void)? // just a function signature which is given implemenation inside the MapViewController
     var collapseDrawer: (() -> Void)?
@@ -20,14 +27,8 @@ class CinemaTableViewController: UITableViewController, CLLocationManagerDelegat
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        refresh()
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 80
-    }
-    
-    @objc func refresh() {
-        //self.updateCinemas?(cinemas)
-        self.tableView.reloadData() // a refresh the tableView.
     }
     
     @IBAction func searchButton(_ sender: Any) {
