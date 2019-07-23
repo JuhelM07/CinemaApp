@@ -20,12 +20,17 @@ class CinemaTableViewController: UITableViewController, CLLocationManagerDelegat
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        refresh()
         self.tableView.rowHeight = UITableView.automaticDimension
-        self.tableView.estimatedRowHeight = 90
+        self.tableView.estimatedRowHeight = 80
+    }
+    
+    @objc func refresh() {
+        //self.updateCinemas?(cinemas)
+        self.tableView.reloadData() // a refresh the tableView.
     }
     
     @IBAction func searchButton(_ sender: Any) {
-        
         if let postcode = postcodeTF.text, !postcode.isEmpty {
             NetworkManager.cinemaSearch(withPostCode: postcode) { (cinemas) in
                 self.cinemas = cinemas

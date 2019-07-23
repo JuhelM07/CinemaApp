@@ -23,6 +23,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
         initialiseLocationManager()
         guard let drawerViewController = self.storyboard!.instantiateViewController(withIdentifier: "DrawerViewController") as? CinemaTableViewController else { return }
         
@@ -57,19 +58,21 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         //manager.stopUpdatingLocation()
-        let loca = locations[0]
-        
-        let span:MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: 0.002,longitudeDelta: 0.002)
-        let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(loca.coordinate.latitude, loca.coordinate.longitude)
-        let region:MKCoordinateRegion = MKCoordinateRegion(center:myLocation, span: span)
-        mapView.setRegion(region, animated: true)
-        mapView.showsUserLocation = true
-        
-//        NetworkManager.cinemaInfoSearch(withLongitude: String(loca.coordinate.longitude), withLatitude: String(loca.coordinate.latitude)) { (cinemaInfo) in
-//            self.cinemaInfo = cinemaInfo
-//        }
-//
-//        print(cinemaI?.latitude)
+        if let location = locations.first {
+            let cinemaController = CinemaTableViewController()
+            let span:MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: 0.002,longitudeDelta: 0.002)
+            let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
+            let region:MKCoordinateRegion = MKCoordinateRegion(center:myLocation, span: span)
+            mapView.setRegion(region, animated: true)
+            mapView.showsUserLocation = true
+            ////////FROM HERE/////////////////////////
+            NetworkManager.cinemaSearch(withLongitude: String(location.coordinate.longitude), withLatitude: String(location.coordinate.latitude)) { (cinemas) in
+                self.configureMapViewUpdater(with: cinemaController)
+                
+                print("Accessed")
+             /////////////////////////////////////////
+    
+        }
     }
 }
     

@@ -97,59 +97,45 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cinemaCell" rowHeight="159" id="EOd-Yj-i2v" customClass="CinemaTableViewCell" customModule="CinemaApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="127" width="414" height="159"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cinemaCell" rowHeight="80" id="EOd-Yj-i2v" customClass="CinemaTableViewCell" customModule="CinemaApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="127" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EOd-Yj-i2v" id="M0Y-l0-VfX">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="158.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="cinema name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nck-sg-nI8">
-                                            <rect key="frame" x="27" y="34.5" width="243" height="24.5"/>
-                                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="21"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="cinema id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDh-5E-LMF">
-                                            <rect key="frame" x="27" y="11" width="56.5" height="15.5"/>
-                                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="13"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgm-do-L1D">
-                                            <rect key="frame" x="289" y="37" width="105" height="20"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgm-do-L1D">
+                                            <rect key="frame" x="276" y="29" width="105" height="20"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="105" id="ZUf-uG-wDV"/>
+                                                <constraint firstAttribute="height" constant="20" id="YtB-cf-ro3"/>
+                                                <constraint firstAttribute="width" constant="105" id="cfn-wT-Wyt"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                             <color key="textColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="website" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzv-x8-OpD">
-                                            <rect key="frame" x="27" y="109" width="367" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cinema name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nck-sg-nI8">
+                                            <rect key="frame" x="20" y="11" width="236" height="58"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="58" id="4SG-7M-adh"/>
+                                                <constraint firstAttribute="width" constant="236" id="zoa-eZ-iQb"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="21"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Qgm-do-L1D" firstAttribute="trailing" secondItem="M0Y-l0-VfX" secondAttribute="trailingMargin" id="1OV-m9-XjX"/>
-                                        <constraint firstItem="nck-sg-nI8" firstAttribute="leading" secondItem="M0Y-l0-VfX" secondAttribute="leadingMargin" constant="7" id="5Ld-NF-8ad"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="nck-sg-nI8" secondAttribute="bottom" constant="62" id="6m7-L4-fQ7"/>
-                                        <constraint firstItem="nck-sg-nI8" firstAttribute="top" secondItem="RDh-5E-LMF" secondAttribute="bottom" constant="8" id="FEZ-Bf-Qca"/>
-                                        <constraint firstItem="Qgm-do-L1D" firstAttribute="centerY" secondItem="nck-sg-nI8" secondAttribute="centerY" id="gmh-eF-eQH"/>
-                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="RDh-5E-LMF" secondAttribute="trailing" id="hgj-vp-ZbZ"/>
-                                        <constraint firstItem="RDh-5E-LMF" firstAttribute="leading" secondItem="M0Y-l0-VfX" secondAttribute="leadingMargin" constant="7" id="kuG-yo-aCm"/>
-                                        <constraint firstItem="Qgm-do-L1D" firstAttribute="leading" secondItem="nck-sg-nI8" secondAttribute="trailing" constant="19" id="nap-Gn-NU9"/>
-                                        <constraint firstItem="RDh-5E-LMF" firstAttribute="top" secondItem="M0Y-l0-VfX" secondAttribute="topMargin" id="s37-ag-sw8"/>
-                                        <constraint firstItem="nck-sg-nI8" firstAttribute="top" secondItem="RDh-5E-LMF" secondAttribute="bottom" constant="8" id="ynY-Ju-Kbs"/>
+                                        <constraint firstItem="Qgm-do-L1D" firstAttribute="top" secondItem="M0Y-l0-VfX" secondAttribute="topMargin" constant="18" id="B76-Se-Ooo"/>
+                                        <constraint firstItem="nck-sg-nI8" firstAttribute="leading" secondItem="M0Y-l0-VfX" secondAttribute="leadingMargin" id="Ehz-2u-RkN"/>
+                                        <constraint firstItem="nck-sg-nI8" firstAttribute="bottom" secondItem="M0Y-l0-VfX" secondAttribute="bottomMargin" id="dxy-GH-V9I"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Qgm-do-L1D" secondAttribute="bottom" constant="20" id="sjT-lB-jt2"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Qgm-do-L1D" secondAttribute="trailing" constant="13" id="ubW-L8-knT"/>
+                                        <constraint firstItem="nck-sg-nI8" firstAttribute="top" secondItem="M0Y-l0-VfX" secondAttribute="topMargin" id="vZJ-0p-zvK"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="distanceLabel" destination="Qgm-do-L1D" id="62f-yg-YPz"/>
-                                    <outlet property="idLabel" destination="RDh-5E-LMF" id="LIc-5f-WKE"/>
-                                    <outlet property="latLabel" destination="gzv-x8-OpD" id="PEW-eR-XOx"/>
                                     <outlet property="nameLabel" destination="nck-sg-nI8" id="5DI-5M-wb0"/>
                                 </connections>
                             </tableViewCell>

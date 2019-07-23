@@ -19,7 +19,7 @@ class CinemaTableViewCell: UITableViewCell {
         
         distanceLabel.text = "\(cinema.distance) miles"
         nameLabel.text = cinema.cinemaName
-        idLabel.text = "Cinema ID: \(cinema.id)"
+        //idLabel.text = "Cinema ID: \(cinema.id)"
         
         //print("Latitude is: \(cinema.latitude)")
     }
