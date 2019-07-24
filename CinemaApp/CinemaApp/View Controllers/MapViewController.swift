@@ -10,6 +10,7 @@ import UIKit
 import DrawerView
 import MapKit
 import CoreLocation
+import SVProgressHUD
 
 class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
@@ -20,6 +21,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     var cinemaController: CinemaTableViewController?
     
     @IBOutlet weak var mapView: MKMapView!
+    
     var drawer: DrawerView?
     
     override func viewDidLoad() {
@@ -36,11 +38,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     
     func configureCinemaController(with cinemaController: CinemaTableViewController) {
         
-        cinemaController.collapseDrawer = { () in self.drawer?.position = .partiallyOpen }
-        cinemaController.updateCinemas = { (cinemas) in self.cinemas = cinemas }
+        cinemaController.collapseDrawer = { () in
+            self.drawer?.position = .partiallyOpen }
+        
+        cinemaController.updateCinemas = { (cinemas) in
+            self.cinemas = cinemas }
     }
     
     func initialiseLocationManager() {
+        SVProgressHUD.show()
         
         locationManager.requestAlwaysAuthorization()
         if CLLocationManager.locationServicesEnabled() {
@@ -48,6 +54,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
             locationManager.startUpdatingLocation()
         }
+        
+        SVProgressHUD.dismiss()
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -60,21 +68,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             mapView.setRegion(region, animated: true)
             mapView.showsUserLocation = true
 
+            SVProgressHUD.show()
             NetworkManager.cinemaSearch(withLongitude: String(location.coordinate.longitude), withLatitude: String(location.coordinate.latitude)) { (cinemas) in
-                
                 self.cinemaController!.cinemas = cinemas
+            }
+            
+            NetworkManager.cinemaInfoSearch(withLongitude: String(location.coordinate.longitude), withLatitude: String(location.coordinate.latitude)) { (cinemaInfo) in
+                self.cinemaInfo = cinemaInfo
+            }
+            SVProgressHUD.dismiss(withDelay: 5.0)
         }
     }
-}
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 }

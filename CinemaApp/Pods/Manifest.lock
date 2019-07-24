@@ -1,16 +1,28 @@
 PODS:
   - DrawerView (1.1.0)
+  - SVProgressHUD (2.2.6)
 
 DEPENDENCIES:
   - DrawerView
+  - SVProgressHUD (from `https://github.com/SVProgressHUD/SVProgressHUD.git`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - DrawerView
 
+EXTERNAL SOURCES:
+  SVProgressHUD:
+    :git: https://github.com/SVProgressHUD/SVProgressHUD.git
+
+CHECKOUT OPTIONS:
+  SVProgressHUD:
+    :commit: 4fdf3fdc8703fd9915dae33fc1363c604a06b24e
+    :git: https://github.com/SVProgressHUD/SVProgressHUD.git
+
 SPEC CHECKSUMS:
   DrawerView: 6e05b7a872771dcbbf9a218a796f436f06d8c65b
+  SVProgressHUD: 6ed134667e9ebb2f33679e8273cd48fd3fa349e5
 
-PODFILE CHECKSUM: 18ab0881e3b547d94519e782e547362ec7ca741f
+PODFILE CHECKSUM: 634d0cd2bbd9d82994d6eca134c2278a1089afcb
 
 COCOAPODS: 1.7.3

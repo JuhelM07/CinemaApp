@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CinemaApp/Model/RetrieveCinemaInfo.swift"
-            timestampString = "585016449.6349289"
+            timestampString = "585623625.391669"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "39"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CinemaApp/Model/RetrieveCinemaInfo.swift"
-            timestampString = "585016449.634994"
+            timestampString = "585623625.391757"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CinemaApp/Model/RetrieveCinemaInfo.swift"
-            timestampString = "585016449.635057"
+            timestampString = "585623625.391804"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
@@ -54,11 +54,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CinemaApp/Model/RetrieveCinemaInfo.swift"
-            timestampString = "585016449.635132"
+            timestampString = "585623625.391847"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
@@ -70,11 +70,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CinemaApp/Model/RetrieveCinemaInfo.swift"
-            timestampString = "585016449.6352659"
+            timestampString = "585623625.391928"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "48"
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CinemaApp/View Controllers/CinemaTableViewCell.swift"
-            timestampString = "585530455.407451"
+            timestampString = "585622705.038038"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CinemaApp/View Controllers/CinemaTableViewCell.swift"
-            timestampString = "585530455.407511"
+            timestampString = "585622705.038096"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "27"
@@ -116,16 +116,139 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CinemaApp/View Controllers/CinemaTableViewController.swift"
+            timestampString = "585624030.659543"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "CinemaTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CinemaApp.CinemaTableViewController.updateCinemas.getter : Swift.Optional&lt;(Swift.Array&lt;CinemaApp.Cinema&gt;) -&gt; ()&gt;"
+                  moduleName = "CinemaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Juhel/Documents/Programming/CinemaApp/CinemaApp/View%20Controllers/CinemaTableViewController.swift"
+                  timestampString = "585622886.0194499"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "119">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CinemaApp.CinemaTableViewController.updateCinemas.setter : Swift.Optional&lt;(Swift.Array&lt;CinemaApp.Cinema&gt;) -&gt; ()&gt;"
+                  moduleName = "CinemaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Juhel/Documents/Programming/CinemaApp/CinemaApp/View%20Controllers/CinemaTableViewController.swift"
+                  timestampString = "585622886.021373"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "147">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CinemaApp.CinemaTableViewController.updateCinemas.modify : Swift.Optional&lt;(Swift.Array&lt;CinemaApp.Cinema&gt;) -&gt; ()&gt;"
+                  moduleName = "CinemaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Juhel/Documents/Programming/CinemaApp/CinemaApp/View%20Controllers/CinemaTableViewController.swift"
+                  timestampString = "585622886.023042"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CinemaApp.CinemaTableViewController.updateCinemas.modify : Swift.Optional&lt;(Swift.Array&lt;CinemaApp.Cinema&gt;) -&gt; ()&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "CinemaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Juhel/Documents/Programming/CinemaApp/CinemaApp/View%20Controllers/CinemaTableViewController.swift"
+                  timestampString = "585622886.024779"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CinemaApp.CinemaTableViewController.init(style: __C.UITableViewStyle) -&gt; CinemaApp.CinemaTableViewController"
+                  moduleName = "CinemaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Juhel/Documents/Programming/CinemaApp/CinemaApp/View%20Controllers/CinemaTableViewController.swift"
+                  timestampString = "585622886.027127"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "233">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CinemaApp.CinemaTableViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; CinemaApp.CinemaTableViewController"
+                  moduleName = "CinemaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Juhel/Documents/Programming/CinemaApp/CinemaApp/View%20Controllers/CinemaTableViewController.swift"
+                  timestampString = "585622886.029146"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "363">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CinemaApp.CinemaTableViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CinemaApp.CinemaTableViewController&gt;"
+                  moduleName = "CinemaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Juhel/Documents/Programming/CinemaApp/CinemaApp/View%20Controllers/CinemaTableViewController.swift"
+                  timestampString = "585622886.030773"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "288">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CinemaApp/Network/NetworkManager.swift"
-            timestampString = "585530455.407557"
+            timestampString = "585624030.659681"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
-            landmarkName = "cinemaInfoSearch(withLongitude:withLatitude:completion:)"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "cinemaSearch(withLongitude:withLatitude:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -135,60 +258,44 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CinemaApp/Network/NetworkManager.swift"
-            timestampString = "585530455.407599"
+            filePath = "CinemaApp/View Controllers/MapViewController.swift"
+            timestampString = "585624030.6598639"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "cinemaInfoSearch(withLongitude:withLatitude:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CinemaApp/Network/NetworkManager.swift"
-            timestampString = "585530455.407637"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
-            landmarkName = "cinemaInfoSearch(withLongitude:withLatitude:completion:)"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static CinemaApp.NetworkManager.cinemaInfoSearch(withLongitude: Swift.String, withLatitude: Swift.String, completion: (Swift.Array&lt;CinemaApp.CinemaInfo&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "CinemaApp.MapViewController.locationManager(_: __C.CLLocationManager, didUpdateLocations: Swift.Array&lt;__C.CLLocation&gt;) -&gt; ()"
                   moduleName = "CinemaApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Juhel/Downloads/CinemaApp-changes-3/CinemaApp/CinemaApp/Network/NetworkManager.swift"
-                  timestampString = "585529558.175581"
+                  urlString = "file:///Users/Juhel/Documents/Programming/CinemaApp/CinemaApp/View%20Controllers/MapViewController.swift"
+                  timestampString = "585623146.950166"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "95"
-                  endingLineNumber = "95"
-                  offsetFromSymbolStart = "3427">
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "1505">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static CinemaApp.NetworkManager.cinemaInfoSearch(withLongitude: Swift.String, withLatitude: Swift.String, completion: (Swift.Array&lt;CinemaApp.CinemaInfo&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "closure #2 (Swift.Array&lt;CinemaApp.CinemaInfo&gt;) -&gt; () in CinemaApp.MapViewController.locationManager(_: __C.CLLocationManager, didUpdateLocations: Swift.Array&lt;__C.CLLocation&gt;) -&gt; ()"
                   moduleName = "CinemaApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Juhel/Downloads/CinemaApp-changes-3/CinemaApp/CinemaApp/Network/NetworkManager.swift"
-                  timestampString = "585529558.17735"
+                  urlString = "file:///Users/Juhel/Documents/Programming/CinemaApp/CinemaApp/View%20Controllers/MapViewController.swift"
+                  timestampString = "585623146.951937"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "95"
-                  endingLineNumber = "95"
-                  offsetFromSymbolStart = "1824">
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "34">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -199,29 +306,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CinemaApp/View Controllers/CinemaTableViewController.swift"
-            timestampString = "585530455.407732"
+            filePath = "CinemaApp/View Controllers/MapViewController.swift"
+            timestampString = "585624030.660354"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "refresh()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CinemaApp/View Controllers/CinemaTableViewController.swift"
-            timestampString = "585530455.407783"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -232,13 +323,285 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CinemaApp/Network/NetworkManager.swift"
-            timestampString = "585530455.407833"
+            timestampString = "585624030.660683"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "cinemaSearch(withLongitude:withLatitude:completion:)"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "cinemaInfoSearch(withLongitude:withLatitude:completion:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CinemaApp/Network/NetworkManager.swift"
+            timestampString = "585624030.6607521"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "cinemaInfoSearch(withLongitude:withLatitude:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CinemaApp/Network/NetworkManager.swift"
+            timestampString = "585624030.660822"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "cinemaInfoSearch(withLongitude:withLatitude:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CinemaApp/Network/NetworkManager.swift"
+            timestampString = "585624030.660882"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "cinemaInfoSearch(withLongitude:withLatitude:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CinemaApp/Network/NetworkManager.swift"
+            timestampString = "585624030.660951"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "cinemaInfoSearch(withLongitude:withLatitude:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CinemaApp/Network/NetworkManager.swift"
+            timestampString = "585624030.66101"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "cinemaInfoSearch(withLongitude:withLatitude:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CinemaApp/Network/NetworkManager.swift"
+            timestampString = "585624030.6610661"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "cinemaInfoSearch(withLongitude:withLatitude:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static CinemaApp.NetworkManager.cinemaInfoSearch(withLongitude: Swift.String, withLatitude: Swift.String, completion: (Swift.Array&lt;CinemaApp.CinemaInfo&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CinemaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Juhel/Documents/Programming/CinemaApp/CinemaApp/Network/NetworkManager.swift"
+                  timestampString = "585623239.763906"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "800">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static CinemaApp.NetworkManager.cinemaInfoSearch(withLongitude: Swift.String, withLatitude: Swift.String, completion: (Swift.Array&lt;CinemaApp.CinemaInfo&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CinemaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Juhel/Documents/Programming/CinemaApp/CinemaApp/Network/NetworkManager.swift"
+                  timestampString = "585623239.766589"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "526">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CinemaApp/Network/NetworkManager.swift"
+            timestampString = "585624030.661231"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "cinemaInfoSearch(withLongitude:withLatitude:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CinemaApp/Network/NetworkManager.swift"
+            timestampString = "585624030.6612951"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "cinemaInfoSearch(withLongitude:withLatitude:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CinemaApp/Network/NetworkManager.swift"
+            timestampString = "585624030.66135"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "cinemaInfoSearch(withLongitude:withLatitude:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CinemaApp/Network/NetworkManager.swift"
+            timestampString = "585624030.661404"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "cinemaInfoSearch(withLongitude:withLatitude:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CinemaApp/Network/NetworkManager.swift"
+            timestampString = "585624030.661468"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "cinemaInfoSearch(withLongitude:withLatitude:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CinemaApp/Network/NetworkManager.swift"
+            timestampString = "585624030.661532"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "cinemaInfoSearch(withLongitude:withLatitude:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CinemaApp/Network/NetworkManager.swift"
+            timestampString = "585624030.661574"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "cinemaInfoSearch(withLongitude:withLatitude:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static CinemaApp.NetworkManager.cinemaInfoSearch(withLongitude: Swift.String, withLatitude: Swift.String, completion: (Swift.Array&lt;CinemaApp.CinemaInfo&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CinemaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Juhel/Documents/Programming/CinemaApp/CinemaApp/Network/NetworkManager.swift"
+                  timestampString = "585623415.68682"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "2972">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static CinemaApp.NetworkManager.cinemaInfoSearch(withLongitude: Swift.String, withLatitude: Swift.String, completion: (Swift.Array&lt;CinemaApp.CinemaInfo&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CinemaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Juhel/Documents/Programming/CinemaApp/CinemaApp/Network/NetworkManager.swift"
+                  timestampString = "585623415.6892329"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "159">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

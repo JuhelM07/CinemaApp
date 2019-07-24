@@ -47,7 +47,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="VCG-fW-0dN">
+                        <view key="tableHeaderView" alpha="0.75" contentMode="scaleToFill" id="VCG-fW-0dN">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
@@ -86,7 +86,6 @@
                                     </state>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="sTj-nj-gL6" firstAttribute="top" secondItem="R5C-1p-zuo" secondAttribute="top" id="73J-q4-0AQ"/>
                                 <constraint firstAttribute="trailing" secondItem="oos-Oh-HEV" secondAttribute="trailing" constant="8" id="A8W-5t-Cc8"/>
@@ -147,6 +146,7 @@
                     </tableView>
                     <connections>
                         <outlet property="postcodeTF" destination="R5C-1p-zuo" id="cXA-qa-G60"/>
+                        <outlet property="searchBtn" destination="sTj-nj-gL6" id="v6U-6g-fa7"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xkV-Ph-zHd" userLabel="First Responder" sceneMemberID="firstResponder"/>

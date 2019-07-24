@@ -7,5 +7,6 @@ target 'CinemaApp' do
 
   # Pods for CinemaApp
 	pod "DrawerView"
+  pod 'SVProgressHUD', :git => 'https://github.com/SVProgressHUD/SVProgressHUD.git'
 
 end

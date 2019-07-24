@@ -16,7 +16,6 @@
 		2525294322BD431000DA31B8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2525294222BD431000DA31B8 /* NetworkManager.swift */; };
 		2525294522BD48F200DA31B8 /* CinemaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2525294422BD48F200DA31B8 /* CinemaTableViewCell.swift */; };
 		25EF721722CEAB7C00DFA2F6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EF721622CEAB7C00DFA2F6 /* MapViewController.swift */; };
-		25EF721C22CEB18E00DFA2F6 /* InitMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EF721B22CEB18E00DFA2F6 /* InitMap.swift */; };
 		25EF721E22CEB8B800DFA2F6 /* RetrieveCinemaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EF721D22CEB8B800DFA2F6 /* RetrieveCinemaInfo.swift */; };
 		6E9E31B406EEC7C2C2AB5295 /* Pods_CinemaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000F172DF4A8946690EE9826 /* Pods_CinemaApp.framework */; };
 /* End PBXBuildFile section */
@@ -34,7 +33,6 @@
 		2525294222BD431000DA31B8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		2525294422BD48F200DA31B8 /* CinemaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaTableViewCell.swift; sourceTree = "<group>"; };
 		25EF721622CEAB7C00DFA2F6 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		25EF721B22CEB18E00DFA2F6 /* InitMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitMap.swift; sourceTree = "<group>"; };
 		25EF721D22CEB8B800DFA2F6 /* RetrieveCinemaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveCinemaInfo.swift; sourceTree = "<group>"; };
 		8E1F1F170CEB859A803F315E /* Pods-CinemaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CinemaApp.release.xcconfig"; path = "Target Support Files/Pods-CinemaApp/Pods-CinemaApp.release.xcconfig"; sourceTree = "<group>"; };
 		A8CF0EA26DB2C11260451856 /* Pods-CinemaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CinemaApp.debug.xcconfig"; path = "Target Support Files/Pods-CinemaApp/Pods-CinemaApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -73,7 +71,6 @@
 		2525292722BD3BBE00DA31B8 /* CinemaApp */ = {
 			isa = PBXGroup;
 			children = (
-				25EF721A22CEB16C00DFA2F6 /* InitMap */,
 				2525294122BD42F800DA31B8 /* Network */,
 				2525294022BD42DB00DA31B8 /* Model */,
 				2525292822BD3BBE00DA31B8 /* AppDelegate.swift */,
@@ -119,14 +116,6 @@
 				2525294222BD431000DA31B8 /* NetworkManager.swift */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		25EF721A22CEB16C00DFA2F6 /* InitMap */ = {
-			isa = PBXGroup;
-			children = (
-				25EF721B22CEB18E00DFA2F6 /* InitMap.swift */,
-			);
-			path = InitMap;
 			sourceTree = "<group>";
 		};
 		3CB39A7A6890E535C950CF70 /* Frameworks */ = {
@@ -229,7 +218,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CinemaApp/Pods-CinemaApp-frameworks.sh\"\n\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CinemaApp/Pods-CinemaApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8646FB771E70AC144E22E48F /* [CP] Check Pods Manifest.lock */ = {
@@ -265,7 +254,6 @@
 				25EF721722CEAB7C00DFA2F6 /* MapViewController.swift in Sources */,
 				25EF721E22CEB8B800DFA2F6 /* RetrieveCinemaInfo.swift in Sources */,
 				2525294522BD48F200DA31B8 /* CinemaTableViewCell.swift in Sources */,
-				25EF721C22CEB18E00DFA2F6 /* InitMap.swift in Sources */,
 				2525292922BD3BBE00DA31B8 /* AppDelegate.swift in Sources */,
 				2525293B22BD3CE800DA31B8 /* RetrieveCinema.swift in Sources */,
 				2525293D22BD422C00DA31B8 /* CinemaTableViewController.swift in Sources */,

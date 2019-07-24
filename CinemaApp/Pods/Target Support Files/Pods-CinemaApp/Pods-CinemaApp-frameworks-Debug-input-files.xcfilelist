@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-CinemaApp/Pods-CinemaApp-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/DrawerView/DrawerView.framework
+${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework

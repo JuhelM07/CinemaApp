@@ -3,63 +3,108 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0475C6FEB48F060BDAC9BBFBA896383C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F324A1A9C28B3F2BA97113C933082632 /* Extensions.swift */; };
-		0E163CFD22DC9D6AC06DEFC3DEC42398 /* DrawerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FEB5696D13D406C8BC67D780765526B0 /* DrawerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2A82E5D77BF2D7A230AA2E7E7E302AF3 /* DrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCA8AD84A692634895AFB16D08D39D3 /* DrawerView.swift */; };
-		426AB825513DE6A510A07141BE95EFD5 /* DrawerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 007F17E802FA319AA816439867C52279 /* DrawerView-dummy.m */; };
-		56DD1D80B884518AEAA87678771B9222 /* Pods-CinemaApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF8AF2F229359E394E4D0092A5F995D /* Pods-CinemaApp-dummy.m */; };
-		8384AAD58A18177470D563FE877013B6 /* CutCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B615AA281FF24B43E1012E07BFBF0BB6 /* CutCornerView.swift */; };
-		9404EBE2DF4A0DE92104178E3152E6DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		AB061B3EEACDA36AD51C31E70AF84DB9 /* Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FADC607B11882B9CB70DD86ADE875A /* Interpolation.swift */; };
-		B4BE523BE7049353EC560207E14EED22 /* DrawerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 48F6F02833E7620FACBD9A9B65AE7FD3 /* DrawerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B724EF0771E30638EFF3F5A3429BA30C /* Pods-CinemaApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 772584CDE60EAFD8922B9FE0CD06E91E /* Pods-CinemaApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC5ABDE789A51123DD2D4A9D6E62D8D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		FFC2B55399F2B2906C888A8B054E24C7 /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D119436313E14F2D147B1A1B9850CB1E /* Overlay.swift */; };
+		0475C6FEB48F060BDAC9BBFBA896383C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEAE4AA0DB884322E7420F95872797 /* Extensions.swift */; };
+		0AD83C55D5ED161F492CA210D1B09E2E /* Pods-CinemaApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 772584CDE60EAFD8922B9FE0CD06E91E /* Pods-CinemaApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CA80ED7E59E6BCE64CEEE649A3C6D2F /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 368D70A84C9BED9AF63F0C0A85C3D306 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E163CFD22DC9D6AC06DEFC3DEC42398 /* DrawerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DBB02163AC065C3C3F60C289EF3FB640 /* DrawerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		264E1A478BDFA31DA6842749C72EA535 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7935568A1F0845B793E07FB7E7EC53D1 /* SVProgressHUD.bundle */; };
+		2A82E5D77BF2D7A230AA2E7E7E302AF3 /* DrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73742E5476E1166F883C4E240F24963 /* DrawerView.swift */; };
+		3392F8407B8C6F47A4E47436894642D8 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 39B630D4DE554F6B1716C6FEB7FBDE71 /* SVProgressHUD.m */; };
+		426AB825513DE6A510A07141BE95EFD5 /* DrawerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B42583E9A93B923C175E9562A7A03EA3 /* DrawerView-dummy.m */; };
+		8384AAD58A18177470D563FE877013B6 /* CutCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CF9CE9E6B40AAEB01BE75DD0307C3C /* CutCornerView.swift */; };
+		87655F86CEDB345FD5881CEED65EABF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
+		9404EBE2DF4A0DE92104178E3152E6DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
+		96EADE99073DBA8FCE7904627E2D18EE /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0CAC94D8397DFC350DCE22FB4F0889 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99456829035D2883017E8EBCDB82C231 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB6193BDF9256B1B2DC71E7CF8BFFB3D /* QuartzCore.framework */; };
+		9FDEEEE37349769B84A30B0105DFF456 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7586F0C4FAF4E615565FE19788311B43 /* SVProgressHUD-dummy.m */; };
+		AB061B3EEACDA36AD51C31E70AF84DB9 /* Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E710A936744C370EEF0CF08E1C86A35 /* Interpolation.swift */; };
+		B4BE523BE7049353EC560207E14EED22 /* DrawerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 92516B9629A184233AB6149E69E4B8F4 /* DrawerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5B9915F785CB47C5C07F0B698911B00 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C27EC9B5E51ECAA609398351EED4D9C /* SVIndefiniteAnimatedView.m */; };
+		D2246BE5AF9C116D84444CC5C955BC02 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 61053AE3EF77432B7E86C4C2C9A26E80 /* SVRadialGradientLayer.m */; };
+		D4914107FF5A197B9D0BC6D1C089E33D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */; };
+		D74AA6257FA1C2BE2FD8C74F3B055A97 /* Pods-CinemaApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF8AF2F229359E394E4D0092A5F995D /* Pods-CinemaApp-dummy.m */; };
+		D87B2D5ED73534ACF97CE0A52FA18AE4 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = AE02B5CA6C9E59D15E0D5A79211CC091 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE12057AB8895931A0E9499619C5CFC8 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1475AADC329E8400009144511B2EA55F /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0186A63060F0EB3676F95CD0ACE0E18 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 14BABB0D743C32AD60746BCF27446C55 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEAA1518C49804736C3F40117D064CBE /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = D678B107E07949C145D3CE723CCFA7F0 /* SVProgressAnimatedView.m */; };
+		FFC2B55399F2B2906C888A8B054E24C7 /* Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA4AF66842C8BB8CBA9EDDD864179B /* Overlay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FA17A74370D68A4500B58B1D10B79D55 /* PBXContainerItemProxy */ = {
+		81F620866CE73BB2232954FB07F75CB4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9CA98EA4BAFAF5AAA4E363B7613D2E94;
 			remoteInfo = DrawerView;
 		};
+		CE8D3F1CA60980173B3A78F9F0B1C33A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C8D67D8B72D6BA42CCEDB648537A340;
+			remoteInfo = SVProgressHUD;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		007F17E802FA319AA816439867C52279 /* DrawerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DrawerView-dummy.m"; sourceTree = "<group>"; };
-		0FC259DCAE6099BF69F6653A46D6658A /* DrawerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DrawerView.xcconfig; sourceTree = "<group>"; };
+		0F0CAC94D8397DFC350DCE22FB4F0889 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		1173A2B2048BBF7B32E2EC20F5217AD4 /* Pods-CinemaApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CinemaApp-frameworks.sh"; sourceTree = "<group>"; };
+		11EA4AF66842C8BB8CBA9EDDD864179B /* Overlay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Overlay.swift; path = DrawerView/Overlay.swift; sourceTree = "<group>"; };
+		1475AADC329E8400009144511B2EA55F /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		14BABB0D743C32AD60746BCF27446C55 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
 		1BC38AE48B9DFC80A6F7E01412CF06E6 /* Pods-CinemaApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CinemaApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1BCADE69242D6665DFEF1FF33339FE66 /* DrawerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DrawerView.modulemap; sourceTree = "<group>"; };
+		2C27EC9B5E51ECAA609398351EED4D9C /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		2C74EA40DC86C74332CDB98D48ADAA0F /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
+		368D70A84C9BED9AF63F0C0A85C3D306 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		39B630D4DE554F6B1716C6FEB7FBDE71 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		3ADEAE4AA0DB884322E7420F95872797 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = DrawerView/Extensions.swift; sourceTree = "<group>"; };
+		3B75110F59227134131E153FE7A0162F /* DrawerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DrawerView-Info.plist"; sourceTree = "<group>"; };
 		3CF8AF2F229359E394E4D0092A5F995D /* Pods-CinemaApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CinemaApp-dummy.m"; sourceTree = "<group>"; };
-		48F6F02833E7620FACBD9A9B65AE7FD3 /* DrawerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DrawerView.h; path = DrawerView/DrawerView.h; sourceTree = "<group>"; };
+		605F4DDF8AA514F6E3860B020DF07E58 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		61053AE3EF77432B7E86C4C2C9A26E80 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
 		6353E51E1885C6235C1D5C01A14D417C /* Pods-CinemaApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CinemaApp-Info.plist"; sourceTree = "<group>"; };
+		716A598B83C014C9B0B46C7F93DCE1E7 /* DrawerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DrawerView.xcconfig; sourceTree = "<group>"; };
 		744829A87061A63FDC0C237FD49D00CE /* DrawerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DrawerView.framework; path = DrawerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7586F0C4FAF4E615565FE19788311B43 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		772584CDE60EAFD8922B9FE0CD06E91E /* Pods-CinemaApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CinemaApp-umbrella.h"; sourceTree = "<group>"; };
-		84F78C190903CC5971E80A577DA13368 /* DrawerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DrawerView-prefix.pch"; sourceTree = "<group>"; };
-		93FADC607B11882B9CB70DD86ADE875A /* Interpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Interpolation.swift; path = DrawerView/Interpolation.swift; sourceTree = "<group>"; };
+		7935568A1F0845B793E07FB7E7EC53D1 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		7E710A936744C370EEF0CF08E1C86A35 /* Interpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Interpolation.swift; path = DrawerView/Interpolation.swift; sourceTree = "<group>"; };
+		7EC4EF1A87558B2B1134A80A790BCDC0 /* SVProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SVProgressHUD-Info.plist"; sourceTree = "<group>"; };
+		92516B9629A184233AB6149E69E4B8F4 /* DrawerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DrawerView.h; path = DrawerView/DrawerView.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A451A2BDAFE2ED35AA7B32A9D7E4850F /* DrawerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DrawerView-prefix.pch"; sourceTree = "<group>"; };
 		A4B34BB9266417BA02714E168DF60FA9 /* Pods-CinemaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CinemaApp.release.xcconfig"; sourceTree = "<group>"; };
+		AE02B5CA6C9E59D15E0D5A79211CC091 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		B42583E9A93B923C175E9562A7A03EA3 /* DrawerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DrawerView-dummy.m"; sourceTree = "<group>"; };
 		B43A0AB4CF6D66B30575B146BEE5258D /* Pods-CinemaApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CinemaApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		B615AA281FF24B43E1012E07BFBF0BB6 /* CutCornerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CutCornerView.swift; path = DrawerView/CutCornerView.swift; sourceTree = "<group>"; };
+		B4CAB7AD2439EE378A8558278B481DE0 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		B7F554604CE1E6B9C57EA40BA5069378 /* Pods_CinemaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CinemaApp.framework; path = "Pods-CinemaApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8802735722EE0604F68A5C418E4862A /* Pods-CinemaApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CinemaApp.modulemap"; sourceTree = "<group>"; };
-		BBCA8AD84A692634895AFB16D08D39D3 /* DrawerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerView.swift; path = DrawerView/DrawerView.swift; sourceTree = "<group>"; };
-		C4E1E5322F1775E6563664D0405F5995 /* DrawerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DrawerView.modulemap; sourceTree = "<group>"; };
-		D119436313E14F2D147B1A1B9850CB1E /* Overlay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Overlay.swift; path = DrawerView/Overlay.swift; sourceTree = "<group>"; };
-		DCBDA670BF417F462BF9BCC09FC13678 /* DrawerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DrawerView-Info.plist"; sourceTree = "<group>"; };
-		F324A1A9C28B3F2BA97113C933082632 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = DrawerView/Extensions.swift; sourceTree = "<group>"; };
-		FEB5696D13D406C8BC67D780765526B0 /* DrawerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DrawerView-umbrella.h"; sourceTree = "<group>"; };
+		C1CF9CE9E6B40AAEB01BE75DD0307C3C /* CutCornerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CutCornerView.swift; path = DrawerView/CutCornerView.swift; sourceTree = "<group>"; };
+		CB6193BDF9256B1B2DC71E7CF8BFFB3D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		D678B107E07949C145D3CE723CCFA7F0 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		DBB02163AC065C3C3F60C289EF3FB640 /* DrawerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DrawerView-umbrella.h"; sourceTree = "<group>"; };
+		E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F73742E5476E1166F883C4E240F24963 /* DrawerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DrawerView.swift; path = DrawerView/DrawerView.swift; sourceTree = "<group>"; };
 		FF25A958881E7A941F652E1F5458DBB7 /* Pods-CinemaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CinemaApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		49AF1DBA405A32D0EEB734D7D6DBFF64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87655F86CEDB345FD5881CEED65EABF3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6F9B905C4EB28F3E0C027F65E47C106F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -68,32 +113,70 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D7DA52B8BD517F5F584D6CB6C432223E /* Frameworks */ = {
+		B3D1D1191F24E31CEEA04BDB3FB4C0F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC5ABDE789A51123DD2D4A9D6E62D8D7 /* Foundation.framework in Frameworks */,
+				D4914107FF5A197B9D0BC6D1C089E33D /* Foundation.framework in Frameworks */,
+				99456829035D2883017E8EBCDB82C231 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		47673E0B1D2C3DBCD86321C4664F3A77 /* Pods */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B74968FCA400EC70F119C4F84996ACA8 /* DrawerView */,
+				6C850C37433B9EAF70AA8EF4EC21FC43 /* iOS */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5931C8B2CC606828942F3AF54961FFC6 /* Products */ = {
+		36D8263B39DD0D841351220A93807185 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				0F0CAC94D8397DFC350DCE22FB4F0889 /* SVIndefiniteAnimatedView.h */,
+				2C27EC9B5E51ECAA609398351EED4D9C /* SVIndefiniteAnimatedView.m */,
+				14BABB0D743C32AD60746BCF27446C55 /* SVProgressAnimatedView.h */,
+				D678B107E07949C145D3CE723CCFA7F0 /* SVProgressAnimatedView.m */,
+				368D70A84C9BED9AF63F0C0A85C3D306 /* SVProgressHUD.h */,
+				39B630D4DE554F6B1716C6FEB7FBDE71 /* SVProgressHUD.m */,
+				AE02B5CA6C9E59D15E0D5A79211CC091 /* SVRadialGradientLayer.h */,
+				61053AE3EF77432B7E86C4C2C9A26E80 /* SVRadialGradientLayer.m */,
+				84AA2C1221CB167335BF422828AAE418 /* Resources */,
+				F25137546640B7113AF589C6C963D494 /* Support Files */,
+			);
+			name = SVProgressHUD;
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		4FC51D4EE95A8AC3A30E003F3C27C0D3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				744829A87061A63FDC0C237FD49D00CE /* DrawerView.framework */,
 				B7F554604CE1E6B9C57EA40BA5069378 /* Pods_CinemaApp.framework */,
+				E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		575A82185136F4AF56DB713635BBC498 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E61AC6DBE46C5DE745A75043AAEC1C4F /* DrawerView */,
+				36D8263B39DD0D841351220A93807185 /* SVProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6C850C37433B9EAF70AA8EF4EC21FC43 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EB0F1732A2D4DBA41714F9E205837D34 /* Foundation.framework */,
+				CB6193BDF9256B1B2DC71E7CF8BFFB3D /* QuartzCore.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		7DFEC6F883A91C0A12BFFAC042DB69B7 /* Targets Support Files */ = {
@@ -102,6 +185,14 @@
 				AF1EA24E3FD632FA9E2DE864BF67274F /* Pods-CinemaApp */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		84AA2C1221CB167335BF422828AAE418 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7935568A1F0845B793E07FB7E7EC53D1 /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		AF1EA24E3FD632FA9E2DE864BF67274F /* Pods-CinemaApp */ = {
@@ -121,70 +212,72 @@
 			path = "Target Support Files/Pods-CinemaApp";
 			sourceTree = "<group>";
 		};
-		B74968FCA400EC70F119C4F84996ACA8 /* DrawerView */ = {
+		C6B56D7DF0259D2383C641E8BD7E8539 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B615AA281FF24B43E1012E07BFBF0BB6 /* CutCornerView.swift */,
-				48F6F02833E7620FACBD9A9B65AE7FD3 /* DrawerView.h */,
-				BBCA8AD84A692634895AFB16D08D39D3 /* DrawerView.swift */,
-				F324A1A9C28B3F2BA97113C933082632 /* Extensions.swift */,
-				93FADC607B11882B9CB70DD86ADE875A /* Interpolation.swift */,
-				D119436313E14F2D147B1A1B9850CB1E /* Overlay.swift */,
-				F47187F0594CCBF6E2B9CF73DBCC6A4C /* Support Files */,
+				1BCADE69242D6665DFEF1FF33339FE66 /* DrawerView.modulemap */,
+				716A598B83C014C9B0B46C7F93DCE1E7 /* DrawerView.xcconfig */,
+				B42583E9A93B923C175E9562A7A03EA3 /* DrawerView-dummy.m */,
+				3B75110F59227134131E153FE7A0162F /* DrawerView-Info.plist */,
+				A451A2BDAFE2ED35AA7B32A9D7E4850F /* DrawerView-prefix.pch */,
+				DBB02163AC065C3C3F60C289EF3FB640 /* DrawerView-umbrella.h */,
 			);
-			name = DrawerView;
-			path = DrawerView;
-			sourceTree = "<group>";
-		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
-			);
-			name = iOS;
+			name = "Support Files";
+			path = "../Target Support Files/DrawerView";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				47673E0B1D2C3DBCD86321C4664F3A77 /* Pods */,
-				5931C8B2CC606828942F3AF54961FFC6 /* Products */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				575A82185136F4AF56DB713635BBC498 /* Pods */,
+				4FC51D4EE95A8AC3A30E003F3C27C0D3 /* Products */,
 				7DFEC6F883A91C0A12BFFAC042DB69B7 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		E61AC6DBE46C5DE745A75043AAEC1C4F /* DrawerView */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				C1CF9CE9E6B40AAEB01BE75DD0307C3C /* CutCornerView.swift */,
+				92516B9629A184233AB6149E69E4B8F4 /* DrawerView.h */,
+				F73742E5476E1166F883C4E240F24963 /* DrawerView.swift */,
+				3ADEAE4AA0DB884322E7420F95872797 /* Extensions.swift */,
+				7E710A936744C370EEF0CF08E1C86A35 /* Interpolation.swift */,
+				11EA4AF66842C8BB8CBA9EDDD864179B /* Overlay.swift */,
+				C6B56D7DF0259D2383C641E8BD7E8539 /* Support Files */,
 			);
-			name = Frameworks;
+			name = DrawerView;
+			path = DrawerView;
 			sourceTree = "<group>";
 		};
-		F47187F0594CCBF6E2B9CF73DBCC6A4C /* Support Files */ = {
+		F25137546640B7113AF589C6C963D494 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C4E1E5322F1775E6563664D0405F5995 /* DrawerView.modulemap */,
-				0FC259DCAE6099BF69F6653A46D6658A /* DrawerView.xcconfig */,
-				007F17E802FA319AA816439867C52279 /* DrawerView-dummy.m */,
-				DCBDA670BF417F462BF9BCC09FC13678 /* DrawerView-Info.plist */,
-				84F78C190903CC5971E80A577DA13368 /* DrawerView-prefix.pch */,
-				FEB5696D13D406C8BC67D780765526B0 /* DrawerView-umbrella.h */,
+				2C74EA40DC86C74332CDB98D48ADAA0F /* SVProgressHUD.modulemap */,
+				605F4DDF8AA514F6E3860B020DF07E58 /* SVProgressHUD.xcconfig */,
+				7586F0C4FAF4E615565FE19788311B43 /* SVProgressHUD-dummy.m */,
+				7EC4EF1A87558B2B1134A80A790BCDC0 /* SVProgressHUD-Info.plist */,
+				B4CAB7AD2439EE378A8558278B481DE0 /* SVProgressHUD-prefix.pch */,
+				1475AADC329E8400009144511B2EA55F /* SVProgressHUD-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/DrawerView";
+			path = "../Target Support Files/SVProgressHUD";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		96DB0DEA6093BEF2D7733AB234DF01D5 /* Headers */ = {
+		7C044C67F11489EFA3459B8399E7061C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B724EF0771E30638EFF3F5A3429BA30C /* Pods-CinemaApp-umbrella.h in Headers */,
+				96EADE99073DBA8FCE7904627E2D18EE /* SVIndefiniteAnimatedView.h in Headers */,
+				E0186A63060F0EB3676F95CD0ACE0E18 /* SVProgressAnimatedView.h in Headers */,
+				DE12057AB8895931A0E9499619C5CFC8 /* SVProgressHUD-umbrella.h in Headers */,
+				0CA80ED7E59E6BCE64CEEE649A3C6D2F /* SVProgressHUD.h in Headers */,
+				D87B2D5ED73534ACF97CE0A52FA18AE4 /* SVRadialGradientLayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,9 +290,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E27FA54FD6020F5791351BA342187044 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AD83C55D5ED161F492CA210D1B09E2E /* Pods-CinemaApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E76C288BA44757915CF3700D8A326EB7 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildPhases = (
+				7C044C67F11489EFA3459B8399E7061C /* Headers */,
+				D0233C648200ED130A278D7164E80914 /* Sources */,
+				B3D1D1191F24E31CEEA04BDB3FB4C0F2 /* Frameworks */,
+				7BB2E885B360CCC1AEF0C191542BA06E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SVProgressHUD;
+			productName = SVProgressHUD;
+			productReference = E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		9CA98EA4BAFAF5AAA4E363B7613D2E94 /* DrawerView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E0ABD976125EA6CD83CDBA1A5A86B11 /* Build configuration list for PBXNativeTarget "DrawerView" */;
@@ -220,17 +339,18 @@
 		};
 		D17B7B08BC4290F9B1BF232ECACC9D5E /* Pods-CinemaApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94C92587215B90C80371EE94E3952A2A /* Build configuration list for PBXNativeTarget "Pods-CinemaApp" */;
+			buildConfigurationList = B03DA4D5AAF8B0C790AA79C8545EB8E1 /* Build configuration list for PBXNativeTarget "Pods-CinemaApp" */;
 			buildPhases = (
-				96DB0DEA6093BEF2D7733AB234DF01D5 /* Headers */,
-				77338F50FD4C1A4AF97851EEE00E88F6 /* Sources */,
-				D7DA52B8BD517F5F584D6CB6C432223E /* Frameworks */,
-				A6AEB0989BC86EA6C630AF4EB1104215 /* Resources */,
+				E27FA54FD6020F5791351BA342187044 /* Headers */,
+				8AC6BD1CF858E284721EEFC51CA501F9 /* Sources */,
+				49AF1DBA405A32D0EEB734D7D6DBFF64 /* Frameworks */,
+				0F2E084D14D81A9877020DB4DEEE0874 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4E8E1601EF212AE5726AEA0A2A83F29D /* PBXTargetDependency */,
+				8E0601EE4B252C3268378C6C7CD471C7 /* PBXTargetDependency */,
+				B1C7417F2F0083C05698483AB39425D6 /* PBXTargetDependency */,
 			);
 			name = "Pods-CinemaApp";
 			productName = "Pods-CinemaApp";
@@ -247,28 +367,37 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 5931C8B2CC606828942F3AF54961FFC6 /* Products */;
+			productRefGroup = 4FC51D4EE95A8AC3A30E003F3C27C0D3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				9CA98EA4BAFAF5AAA4E363B7613D2E94 /* DrawerView */,
 				D17B7B08BC4290F9B1BF232ECACC9D5E /* Pods-CinemaApp */,
+				1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A6AEB0989BC86EA6C630AF4EB1104215 /* Resources */ = {
+		0F2E084D14D81A9877020DB4DEEE0874 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB2E885B360CCC1AEF0C191542BA06E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				264E1A478BDFA31DA6842749C72EA535 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +411,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		77338F50FD4C1A4AF97851EEE00E88F6 /* Sources */ = {
+		8AC6BD1CF858E284721EEFC51CA501F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56DD1D80B884518AEAA87678771B9222 /* Pods-CinemaApp-dummy.m in Sources */,
+				D74AA6257FA1C2BE2FD8C74F3B055A97 /* Pods-CinemaApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0233C648200ED130A278D7164E80914 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B9915F785CB47C5C07F0B698911B00 /* SVIndefiniteAnimatedView.m in Sources */,
+				EEAA1518C49804736C3F40117D064CBE /* SVProgressAnimatedView.m in Sources */,
+				9FDEEEE37349769B84A30B0105DFF456 /* SVProgressHUD-dummy.m in Sources */,
+				3392F8407B8C6F47A4E47436894642D8 /* SVProgressHUD.m in Sources */,
+				D2246BE5AF9C116D84444CC5C955BC02 /* SVRadialGradientLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,11 +447,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4E8E1601EF212AE5726AEA0A2A83F29D /* PBXTargetDependency */ = {
+		8E0601EE4B252C3268378C6C7CD471C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DrawerView;
 			target = 9CA98EA4BAFAF5AAA4E363B7613D2E94 /* DrawerView */;
-			targetProxy = FA17A74370D68A4500B58B1D10B79D55 /* PBXContainerItemProxy */;
+			targetProxy = 81F620866CE73BB2232954FB07F75CB4 /* PBXContainerItemProxy */;
+		};
+		B1C7417F2F0083C05698483AB39425D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = 1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */;
+			targetProxy = CE8D3F1CA60980173B3A78F9F0B1C33A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -441,7 +588,7 @@
 		};
 		498A34C2E7BED9CFFE4BE08145A514E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FC259DCAE6099BF69F6653A46D6658A /* DrawerView.xcconfig */;
+			baseConfigurationReference = 716A598B83C014C9B0B46C7F93DCE1E7 /* DrawerView.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -475,9 +622,44 @@
 			};
 			name = Debug;
 		};
+		5840B3887798C985FEA310FF72431D53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 605F4DDF8AA514F6E3860B020DF07E58 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = SVProgressHUD;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		6776F2094EF1E2BAA13542BE5FEBB681 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FC259DCAE6099BF69F6653A46D6658A /* DrawerView.xcconfig */;
+			baseConfigurationReference = 716A598B83C014C9B0B46C7F93DCE1E7 /* DrawerView.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -512,7 +694,43 @@
 			};
 			name = Release;
 		};
-		B391EADB53E1CDA7BBF3E270075B862B /* Release */ = {
+		A9F912FF9E6B66D3E6B5A0BF42DA47DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 605F4DDF8AA514F6E3860B020DF07E58 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = SVProgressHUD;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B6BA3187C083582978D0D4FA60FFEE81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A4B34BB9266417BA02714E168DF60FA9 /* Pods-CinemaApp.release.xcconfig */;
 			buildSettings = {
@@ -551,7 +769,7 @@
 			};
 			name = Release;
 		};
-		C2B17768771A91275EE66EB7923614E5 /* Debug */ = {
+		C7DC10153D84749805659EF0476846C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FF25A958881E7A941F652E1F5458DBB7 /* Pods-CinemaApp.debug.xcconfig */;
 			buildSettings = {
@@ -610,11 +828,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		94C92587215B90C80371EE94E3952A2A /* Build configuration list for PBXNativeTarget "Pods-CinemaApp" */ = {
+		B03DA4D5AAF8B0C790AA79C8545EB8E1 /* Build configuration list for PBXNativeTarget "Pods-CinemaApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C2B17768771A91275EE66EB7923614E5 /* Debug */,
-				B391EADB53E1CDA7BBF3E270075B862B /* Release */,
+				C7DC10153D84749805659EF0476846C8 /* Debug */,
+				B6BA3187C083582978D0D4FA60FFEE81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E76C288BA44757915CF3700D8A326EB7 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5840B3887798C985FEA310FF72431D53 /* Debug */,
+				A9F912FF9E6B66D3E6B5A0BF42DA47DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
