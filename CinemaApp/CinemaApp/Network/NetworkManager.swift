@@ -61,13 +61,13 @@ class NetworkManager: NSObject {
         
         let basePath = "https://api.cinelist.co.uk/search/cinemas/coordinates/" //used to search by coordinates
         let cinemaUrl = "https://api.cinelist.co.uk/get/cinema/"
-        
+        var results = [[String:Any]]()
         
         
         guard let url = URL(string: basePath + latitude + "/" + longitude) else { return }
         
         let task = URLSession.shared.dataTask(with: url) { (data:Data?, response:URLResponse?, error:Error?) in
-            var results = [[String:Any]]()
+            
             guard
                 let data = data,
                 let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String:Any],
@@ -83,6 +83,7 @@ class NetworkManager: NSObject {
                     guard
                         let data2 = data2,
                         let json = try? JSONSerialization.jsonObject(with: data2, options: []) as? [String: Any]
+                        
                         else { return }
                     
                     results.append(json)

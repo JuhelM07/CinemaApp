@@ -19,6 +19,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     var cinemaI:CinemaInfo?
     var cinemas = [Cinema]()
     var cinemaController: CinemaTableViewController?
+    var cinemaName = [String]()
+    var latitude = [String]()
+    var longitude = [String]()
     
     @IBOutlet weak var mapView: MKMapView!
     
@@ -54,12 +57,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
             locationManager.startUpdatingLocation()
         }
-        
+    
         SVProgressHUD.dismiss()
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         //manager.stopUpdatingLocation()
+        
         if let location = locations.first {
             
             let span:MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: 0.002,longitudeDelta: 0.002)
@@ -71,10 +75,26 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             SVProgressHUD.show()
             NetworkManager.cinemaSearch(withLongitude: String(location.coordinate.longitude), withLatitude: String(location.coordinate.latitude)) { (cinemas) in
                 self.cinemaController!.cinemas = cinemas
+                
+                let testPoint = MKPointAnnotation()
+                self.cinemaName = cinemas.map { $0.cinemaName }
             }
             
             NetworkManager.cinemaInfoSearch(withLongitude: String(location.coordinate.longitude), withLatitude: String(location.coordinate.latitude)) { (cinemaInfo) in
                 self.cinemaInfo = cinemaInfo
+                self.latitude = cinemaInfo.map { $0.latitude }
+                self.longitude = cinemaInfo.map { $0.longitude }
+                
+                
+                
+                //print(longitude[1])
+                print(self.latitude.count)
+                print(self.cinemaName.count)
+                
+                let testPoint = MKPointAnnotation()
+                testPoint.title = self.cinemaName[0]
+                testPoint.coordinate = CLLocationCoordinate2D(latitude: Double(self.latitude[0]) as! CLLocationDegrees, longitude: Double(self.longitude[0]) as! CLLocationDegrees)
+                self.mapView.addAnnotation(testPoint)
             }
             SVProgressHUD.dismiss(withDelay: 5.0)
         }
