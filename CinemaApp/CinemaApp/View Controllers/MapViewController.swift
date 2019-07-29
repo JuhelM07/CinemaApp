@@ -19,9 +19,11 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     var cinemaI:CinemaInfo?
     var cinemas = [Cinema]()
     var cinemaController: CinemaTableViewController?
+    
     var cinemaName = [String]()
     var latitude = [String]()
     var longitude = [String]()
+    var distance = [Double]()
     
     @IBOutlet weak var mapView: MKMapView!
     
@@ -72,31 +74,36 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             mapView.setRegion(region, animated: true)
             mapView.showsUserLocation = true
 
-            SVProgressHUD.show()
+            SVProgressHUD.show(withStatus: "Retrieving cinemas aorund you...")
             NetworkManager.cinemaSearch(withLongitude: String(location.coordinate.longitude), withLatitude: String(location.coordinate.latitude)) { (cinemas) in
                 self.cinemaController!.cinemas = cinemas
-                
-                let testPoint = MKPointAnnotation()
                 self.cinemaName = cinemas.map { $0.cinemaName }
+                self.distance = cinemas.map { $0.distance }
             }
             
             NetworkManager.cinemaInfoSearch(withLongitude: String(location.coordinate.longitude), withLatitude: String(location.coordinate.latitude)) { (cinemaInfo) in
                 self.cinemaInfo = cinemaInfo
                 self.latitude = cinemaInfo.map { $0.latitude }
                 self.longitude = cinemaInfo.map { $0.longitude }
-                
-                
-                
-                //print(longitude[1])
-                print(self.latitude.count)
-                print(self.cinemaName.count)
-                
-                let testPoint = MKPointAnnotation()
-                testPoint.title = self.cinemaName[0]
-                testPoint.coordinate = CLLocationCoordinate2D(latitude: Double(self.latitude[0]) as! CLLocationDegrees, longitude: Double(self.longitude[0]) as! CLLocationDegrees)
-                self.mapView.addAnnotation(testPoint)
             }
-            SVProgressHUD.dismiss(withDelay: 5.0)
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 8.0) { // Change `2.0` to the desired number of seconds.
+                // Code you want to be delayed
+                //print(self.distance)
+                for index in 0...(self.cinemaInfo.count - 1) {
+                    //print(self.cinemaName[index], self.longitude[index], self.latitude[index])
+                    
+                    if self.distance[index] <= 5.0 {
+                    let cinemaPoint = MKPointAnnotation()
+                    cinemaPoint.title = self.cinemaName[index]
+                    cinemaPoint.coordinate = CLLocationCoordinate2D(latitude: Double(self.latitude[index]) as! CLLocationDegrees, longitude: Double(self.longitude[index]) as! CLLocationDegrees)
+                    self.mapView.addAnnotation(cinemaPoint)
+                    }
+                }
+                
+            }
+            
+            SVProgressHUD.dismiss(withDelay: 8.0)
         }
     }
 }
