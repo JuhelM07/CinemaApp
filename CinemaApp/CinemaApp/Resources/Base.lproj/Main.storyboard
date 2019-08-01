@@ -13,7 +13,7 @@
         <!--Map View Controller-->
         <scene sceneID="04c-qw-dCM">
             <objects>
-                <viewController id="reh-M9-Qvc" customClass="MapViewController" customModule="CinemaApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" id="reh-M9-Qvc" customClass="MapViewController" customModule="CinemaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ieK-p9-foT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

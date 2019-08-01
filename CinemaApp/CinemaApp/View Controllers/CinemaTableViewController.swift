@@ -12,6 +12,9 @@ import SVProgressHUD
 
 class CinemaTableViewController: UITableViewController, CLLocationManagerDelegate, UITextFieldDelegate {
     
+    var mapController: MapViewController?
+    
+    var cinemaInfo = [CinemaInfo]()
     var cinemas = [Cinema]() {
         didSet {
             DispatchQueue.main.async {
@@ -20,8 +23,10 @@ class CinemaTableViewController: UITableViewController, CLLocationManagerDelegat
         }
     }
     
+    
     let locationManager = CLLocationManager()
     var updateCinemas: (([Cinema]) -> Void)? // just a function signature which is given implemenation inside the MapViewController
+    
     var collapseDrawer: (() -> Void)?
     @IBOutlet weak var postcodeTF: UITextField!
     @IBOutlet weak var searchBtn: UIButton!
@@ -34,26 +39,51 @@ class CinemaTableViewController: UITableViewController, CLLocationManagerDelegat
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 80
         
+        guard let mapController = self.storyboard!.instantiateViewController(withIdentifier: "MapViewController") as? MapViewController else { return }
+        configureMapController(with: mapController)
+        self.mapController = mapController
         postcodeTF.delegate = self
+    }
+    
+    func configureMapController(with mapController: MapViewController) {
+        mapController.updateCinemaInfo = { (cinemaInfo) in
+            self.cinemaInfo = cinemaInfo }
     }
     
     @IBAction func searchButton(_ sender: Any) {
         searchBtn.isEnabled = false
         postcodeTF.isEnabled = false
         if let postcode = postcodeTF.text, !postcode.isEmpty {
-            SVProgressHUD.show()
-            //let formattedPostcode = postcode.replacingOccurrences(of: " ", with: "")
+            SVProgressHUD.show(withStatus: "Retrieving cinemas around you...")
+            //mapController?.removeMapAnnotations()
             NetworkManager.cinemaSearch(withPostCode: postcode) { (cinemas) in
                 self.cinemas = cinemas
                 self.updateCinemas?(cinemas) // if updateCinemas has been given implementation, the updated cinema array is passed as a paramameter. if the updateCinemas is nil, nothing happens
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                    SVProgressHUD.dismiss()
-                    self.searchBtn.isEnabled = true
-                    self.postcodeTF.isEnabled = true
-                }
+                self.mapController?.cinemas = cinemas
+                
+                self.mapController?.cinemaName = cinemas.map { $0.cinemaName }
 
             }
+            
+            NetworkManager.cinemaInfoSearch(withPostcode: postcode) { (cinemaInfo) in
+                self.cinemaInfo = cinemaInfo
+                self.mapController?.cinemaInfo = cinemaInfo
+                
+                self.mapController?.latitude = cinemaInfo.map { $0.latitude }
+                self.mapController?.longitude = cinemaInfo.map { $0.longitude }
+            }
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 8.0) {
+                print(self.cinemaInfo.count)
+                print(self.cinemas.count)
+                //self.mapController?.removeMapAnnotations()
+                self.mapController?.addMapAnnotations()
+                print("Annotations entered through postcode")
+            }
+            SVProgressHUD.dismiss(withDelay: 8.0)
+            self.searchBtn.isEnabled = true
+            self.postcodeTF.isEnabled = true
+            
         } else {
             SVProgressHUD.showInfo(withStatus: "Please enter a valid postcode.")
             searchBtn.isEnabled = true
