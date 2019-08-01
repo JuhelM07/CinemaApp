@@ -79,7 +79,7 @@ class CinemaTableViewController: UITableViewController, CLLocationManagerDelegat
             return false
         }
         
-        let maxLength = 6
+        let maxLength = 7
         let currentString: NSString = textField.text! as NSString
         let newString: NSString =
             currentString.replacingCharacters(in: range, with: string) as NSString

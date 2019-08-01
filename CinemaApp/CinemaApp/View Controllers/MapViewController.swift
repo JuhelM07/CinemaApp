@@ -65,7 +65,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         
         if let location = locations.first {
             
-            let span:MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: 0.02,longitudeDelta: 0.02)
+            let span:MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: 0.1,longitudeDelta: 0.1)
             let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
             let region:MKCoordinateRegion = MKCoordinateRegion(center:myLocation, span: span)
             mapView.setRegion(region, animated: true)
@@ -121,7 +121,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             cinemaPoint.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
             mapView.addAnnotation(cinemaPoint)
         }
-        mapView.showAnnotations(mapView.annotations, animated: true)
+        //mapView.showAnnotations(mapView.annotations, animated: true)
     }
     
     func removeMapAnnotations() {

@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CinemaApp/Network/NetworkManager.swift"
-            timestampString = "586361973.595318"
+            timestampString = "586393825.432785"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
             endingLineNumber = "20"
-            landmarkName = "cinemaSearch(withLongitude:withLatitude:completion:)"
+            landmarkName = "cinemaAndInfoSearch(_:_:completion:)"
             landmarkType = "7">
             <Locations>
                <Location
