@@ -11,7 +11,33 @@ import UIKit
 
 class NetworkManager: NSObject {
     
-    static func cinemaSearch(withLongitude longitude:String, withLatitude latitude:String , completion: @escaping ([Cinema]) -> ()) {
+    func cinemaAndInfoSearch(_ longitude: String,_ latitude: String, completion: @escaping ([Cinema], [CinemaInfo]) -> Void) {
+        
+        cinemaSearch(withLongitude: longitude, withLatitude: latitude) { (cinemas) in
+            
+            self.cinemaInfoSearch(withLongitude: longitude, withLatitude: latitude, completion: { (cinemaInfos) in
+                
+                completion(cinemas, cinemaInfos)
+            })
+        }
+    }
+    
+    
+    func cinemaAndInfoSearch(_ postCode: String, completion: @escaping ([Cinema], [CinemaInfo]) -> Void) {
+        
+        cinemaSearch(postCode) { (cinemas) in
+            
+            self.cinemaInfoSearch(postCode, completion: { (cinemaInfos) in
+                
+                completion(cinemas, cinemaInfos)
+            })
+        }
+    }
+    
+    
+    
+    
+    func cinemaSearch(withLongitude longitude:String, withLatitude latitude:String , completion: @escaping ([Cinema]) -> ()) {
         
         let basePath = "https://api.cinelist.co.uk/search/cinemas/coordinates/" //used to search by coordinates
         
@@ -36,10 +62,10 @@ class NetworkManager: NSObject {
         task.resume()
     }
     
-    static func cinemaSearch(withPostCode postcode:String, completion: @escaping ([Cinema]) -> ()) {
+    func cinemaSearch(_ postCode:String, completion: @escaping ([Cinema]) -> ()) {
         let basePath = "https://api.cinelist.co.uk/search/cinemas/postcode/" //used to search by postcode
         
-        guard let url = URL(string: basePath + postcode) else { return }
+        guard let url = URL(string: basePath + postCode) else { return }
         
         let task = URLSession.shared.dataTask(with: url) { (data:Data?, response:URLResponse?, error:Error?) in
             var cinema = [Cinema]()
@@ -58,14 +84,12 @@ class NetworkManager: NSObject {
         task.resume()
     }
     
-    static func cinemaInfoSearch(withLongitude longitude:String, withLatitude latitude:String , completion: @escaping ([CinemaInfo]) -> ()) {
+    func cinemaInfoSearch(withLongitude longitude:String, withLatitude latitude:String , completion: @escaping ([CinemaInfo]) -> ()) {
         
         let basePath = "https://api.cinelist.co.uk/search/cinemas/coordinates/" //used to search by coordinates
         let cinemaUrl = "https://api.cinelist.co.uk/get/cinema/"
         var results = [[String:Any]]()
 
-        
-        
         guard let url = URL(string: basePath + latitude + "/" + longitude) else { return }
         
         let task = URLSession.shared.dataTask(with: url) { (data:Data?, response:URLResponse?, error:Error?) in
@@ -108,13 +132,13 @@ class NetworkManager: NSObject {
         task.resume()
     }
     
-    static func cinemaInfoSearch(withPostcode postcode:String, completion: @escaping ([CinemaInfo]) -> ()) {
+   func cinemaInfoSearch(_ postCode:String, completion: @escaping ([CinemaInfo]) -> ()) {
         
         let basePath = "https://api.cinelist.co.uk/search/cinemas/postcode/" //used to search by postcode
         let cinemaUrl = "https://api.cinelist.co.uk/get/cinema/"
         var results = [[String:Any]]()
         
-        guard let url = URL(string: basePath + postcode) else { return }
+        guard let url = URL(string: basePath + postCode) else { return }
         
         let task = URLSession.shared.dataTask(with: url) { (data:Data?, response:URLResponse?, error:Error?) in
             

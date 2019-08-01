@@ -10,6 +10,7 @@ import Foundation
 
 struct CinemaInfo {
     
+    private (set) var name: String
     private (set) var address1: String
     private (set) var townCity: String
     private (set) var showTownCity: Bool
@@ -21,12 +22,15 @@ struct CinemaInfo {
     private (set) var longitude: String
     
     enum SerializationError: Error {
+        
         case missing(String)
         case invalid(String, Any)
     }
     
     init(with json: [String: Any]) throws {
+        
         guard
+            let name = json["name"] as? String,
             let address1 = json["address1"] as? String,
             let townCity = json["towncity"] as? String,
             let showTownCity = json["show_towncity"] as? Bool,
@@ -38,6 +42,7 @@ struct CinemaInfo {
             let longitude = json["lon"] as? String
             else { throw SerializationError.missing("Failed to load cinema information.") }
     
+        self.name = name 
         self.address1 = address1
         self.townCity = townCity
         self.showTownCity = showTownCity
@@ -47,7 +52,6 @@ struct CinemaInfo {
         self.distance = distance
         self.latitude = latitude
         self.longitude = longitude
-        
     }
     
     

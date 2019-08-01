@@ -11,7 +11,7 @@ import Foundation
 struct Cinema {
     
     private (set) var distance: Double
-    private (set) var cinemaName: String
+    private (set) var name: String
     private (set) var id: String
     
     enum SerializationError: Error {
@@ -27,7 +27,7 @@ struct Cinema {
         else { throw SerializationError.missing("Failed to load data")}
         
         self.distance = distance
-        self.cinemaName = cinemaName
+        self.name = cinemaName
         self.id = id
     }
     
